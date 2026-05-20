@@ -2,7 +2,7 @@
 
 Bu proje, `https://automationintesting.online/` platformu üzerinde gerçekleştirilen manuel test çalışmalarını içermektedir.
 
-Amaç; gerçek bir QA sürecini simüle ederek test planlama, test senaryosu oluşturma, test case yazımı, bug reporting ve smoke testing süreçlerini dokümante etmektir.
+Amaç; gerçek bir QA sürecini simüle ederek test planlama, test senaryosu oluşturma, test case yazımı, bug reporting, smoke testing ve test design techniques uygulamalarını dokümante etmektir.
 
 ---
 
@@ -27,6 +27,20 @@ Projede aşağıdaki test yaklaşımları kullanılmıştır:
 - Exploratory Testing
 - Smoke Testing
 - UI/UX Testing
+- Validation Testing
+- Edge Case Testing
+
+---
+
+# Test Design Techniques
+
+Projede aşağıdaki test tasarım teknikleri uygulanmıştır:
+
+- Boundary Value Analysis (BVA)
+- Equivalence Partitioning (EP)
+- Decision Table Testing
+- State Transition Testing
+- Edge Case Testing
 
 ---
 
@@ -34,7 +48,11 @@ Projede aşağıdaki test yaklaşımları kullanılmıştır:
 
 ```text
 qa-portfolio/
+│
+├── README.md
+│
 └── manual-testing/
+    │
     ├── test-plan.md
     ├── test-scenarios.xlsx
     ├── test-cases.xlsx
@@ -43,7 +61,15 @@ qa-portfolio/
     ├── bug-report-001.md
     ├── bug-report-002.md
     ├── bug-report-003.md
-    └── screenshots/
+    │
+    ├── screenshots/
+    │
+    └── test-design-techniques/
+        ├── boundary-value-analysis.xlsx
+        ├── equivalence-partitioning.xlsx
+        ├── decision-table.xlsx
+        ├── state-transition-testing.md
+        └── edge-case-testing.md
 ```
 
 ---
@@ -60,6 +86,11 @@ qa-portfolio/
 | bug-report-001.md | Geçmiş tarih rezervasyon validasyon hatası |
 | bug-report-002.md | Duplicate oda oluşturma hatası |
 | bug-report-003.md | Quick Links yönlendirme hatası |
+| boundary-value-analysis.xlsx | Boundary Value Analysis test çalışmaları |
+| equivalence-partitioning.xlsx | Equivalence Partitioning test çalışmaları |
+| decision-table.xlsx | Reservation flow için decision table çalışması |
+| state-transition-testing.md | Reservation lifecycle için state transition çalışması |
+| edge-case-testing.md | Edge case senaryoları ve expected behavior çalışmaları |
 
 ---
 
@@ -72,6 +103,7 @@ Test execution sürecinde aşağıdaki örnek hatalar tespit edilmiştir:
 - Quick Links bağlantılarının çalışmaması
 - Phone alanının harf kabul etmesi
 - Sosyal medya yönlendirmelerinin çalışmaması
+- Amenities bağlantısının çalışmaması
 
 ---
 
@@ -81,6 +113,23 @@ Test execution sürecinde aşağıdaki örnek hatalar tespit edilmiştir:
 - Microsoft Excel
 - Visual Studio Code
 - GitHub
+
+---
+
+# Key QA Skills Demonstrated
+
+- Test Planning
+- Test Scenario Design
+- Test Case Design
+- Functional Testing
+- Validation Testing
+- Negative Testing
+- Exploratory Testing
+- Smoke Testing
+- Bug Reporting
+- Test Design Techniques
+- Edge Case Analysis
+- Business Rule Validation
 
 ---
 
