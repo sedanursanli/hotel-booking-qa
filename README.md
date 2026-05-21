@@ -61,6 +61,9 @@ qa-portfolio/
     ├── bug-report-001.md
     ├── bug-report-002.md
     ├── bug-report-003.md
+    ├── bug-report-004.md
+    ├── bug-report-005.md
+    ├── bug-report-006.md
     │
     ├── screenshots/
     │
@@ -86,6 +89,9 @@ qa-portfolio/
 | bug-report-001.md | Geçmiş tarih rezervasyon validasyon hatası |
 | bug-report-002.md | Duplicate oda oluşturma hatası |
 | bug-report-003.md | Quick Links yönlendirme hatası |
+| bug-report-004.md | Phone alanı validasyon hatası |
+| bug-report-005.md | Sosyal medya yönlendirme hatası |
+| bug-report-006.md | Amenities bağlantı yönlendirme hatası |
 | boundary-value-analysis.xlsx | Boundary Value Analysis test çalışmaları |
 | equivalence-partitioning.xlsx | Equivalence Partitioning test çalışmaları |
 | decision-table.xlsx | Reservation flow için decision table çalışması |

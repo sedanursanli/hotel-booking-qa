@@ -3,7 +3,7 @@
 ---
 
 ## Bug ID
-BUG-001
+BUG-XXX
 
 ---
 
@@ -82,7 +82,7 @@ Varsa ekran görüntüsü veya video bağlantısı eklenebilir.
 ---
 
 ## Reported By
-[Seda Nur Sanlı]
+[Tester Name]
 
 ---
 

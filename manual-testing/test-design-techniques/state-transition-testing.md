@@ -11,8 +11,8 @@ Bu doküman, rezervasyon akışı üzerinde temel bir State Transition Testing y
 | State | Description |
 |---|---|
 | Available | Oda rezervasyona uygundur. |
-| Reserved | Oda için aktif rezervasyon bulunmaktadır. |
-| Cancelled | Rezervasyon iptal edilmiştir. |
+| Reserved | Oda için aktif rezervasyon oluşturulmuştur. |
+
 
 ---
 
@@ -21,8 +21,7 @@ Bu doküman, rezervasyon akışı üzerinde temel bir State Transition Testing y
 | Current State | Action | Next State |
 |---|---|---|
 | Available | Create Reservation | Reserved |
-| Reserved | Cancel Reservation | Cancelled |
-| Cancelled | Rebook Room | Reserved |
+
 
 ---
 
@@ -30,15 +29,14 @@ Bu doküman, rezervasyon akışı üzerinde temel bir State Transition Testing y
 
 | Current State | Invalid Action | Expected Result |
 |---|---|---|
-| Reserved | Create Another Reservation | Sistem aynı oda için tekrar rezervasyon oluşturulmasını engellemelidir. |
-| Cancelled | Cancel Reservation Again | Sistem hata mesajı göstermelidir. |
-| Available | Cancel Reservation | Sistem geçersiz işlem yapılmasını engellemelidir. |
+| Reserved | Create Another Reservation (same dates) | Sistem çakışan rezervasyonu engellemelidir. |
+| Available | Create Reservation with past date | Sistem geçmiş tarih rezervasyonunu reddetmelidir. |
 
 ---
 
 # State Transition Notes
 
 - Bir oda aynı anda yalnızca bir aktif rezervasyona sahip olmalıdır.
-- İptal edilmiş rezervasyon tekrar aktif hale getirilebilmelidir.
 - Geçersiz state geçişlerinde sistem uygun hata yönetimi sağlamalıdır.
 - Rezervasyon durumu değişiklikleri business rule’lara uygun şekilde yönetilmelidir.
+- Cancelled state bu platformda desteklenmemektedir. State transition çalışması yalnızca uygulamada test edilebilen geçişler üzerinden hazırlanmıştır.
